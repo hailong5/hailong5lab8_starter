@@ -14,8 +14,8 @@ public class CustomList {
         cities.add(city);
     }
 
-    
-
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
+    // Implemented according to TDD step 7 (GREEN phase)
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
 }
