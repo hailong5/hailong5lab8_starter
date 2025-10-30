@@ -14,4 +14,13 @@ public class CustomListTest {
         // This test verifies that hasCity() correctly identifies an added city
         assertTrue(list.hasCity(calgary));
     }
+    @Test
+    public void testDeleteCityWhenPresent() {
+        CustomList list = new CustomList();
+        City vancouver = new City("Vancouver", "BC");
+        list.addCity(vancouver);
+
+        assertTrue(list.deleteCity(vancouver), "deleteCity should return true when city was present.");
+        assertFalse(list.hasCity(vancouver), "City should no longer be present after deletion.");
+    }
 }

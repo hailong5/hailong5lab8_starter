@@ -17,5 +17,9 @@ public class CustomList {
     // Implemented according to TDD step 7 (GREEN phase)
     public boolean hasCity(City city) {
         return cities.contains(city);
+
+    }
+    public boolean deleteCity(City city) {
+        return false;
     }
 }
