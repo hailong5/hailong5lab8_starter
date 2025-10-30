@@ -20,6 +20,6 @@ public class CustomList {
 
     }
     public boolean deleteCity(City city) {
-        return false;
+        return cities.remove(city);
     }
 }
